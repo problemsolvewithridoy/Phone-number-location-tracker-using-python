@@ -3,10 +3,10 @@ from phonenumbers import geocoder
 from phonenumbers import carrier
 import opencage
 from opencage.geocoder import OpenCageGeocode
-from myphone import key
 import folium
 
 
+key = "your key" #Geocoder API Key needs to paste here "your key" 
 number = input("please giver your number: ")
 new_number = phonenumbers.parse(number)
 location = geocoder.description_for_number(new_number, "en")
@@ -32,4 +32,3 @@ my_map.save("location.html")
 
 print("location tracking completed")
 print("Thank you")
-
