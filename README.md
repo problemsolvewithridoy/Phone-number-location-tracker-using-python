@@ -16,13 +16,21 @@ To make this project only you need to follow this step:-
 
 ## Installation
 
-Install package with pip
+### Install package with pip (Windows)
 
 ```bash
   pip install phonenumbers
   pip install folium
   pip install geocoder
   pip install opencage
+```
+### Install package with pip (Mac)
+```
+python3 -m pip install phonenumbers
+python3 -m pip install folium
+python3 -m pip install geocoder
+python3 -m pip install opencage
+
 ```
 
 Now need to collect Geocoder API Key from https://opencagedata.com/
