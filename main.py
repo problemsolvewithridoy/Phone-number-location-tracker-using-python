@@ -2,8 +2,11 @@ import phonenumbers
 from phonenumbers import geocoder, carrier
 from opencage.geocoder import OpenCageGeocode
 import folium
-import webbrowser  # Import the webbrowser module to open the HTML file
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Function to validate phone number format
 def validate_phone_number(number):
@@ -18,7 +21,11 @@ def validate_phone_number(number):
 
 # Main function for location tracking
 def track_location():
-    key = "d2b3af88e38b4b5bb6e04f77a89e39f3"  # Replace with your OpenCage API Key
+    # Get OpenCage API Key from environment variable
+    opencage_api_key = os.getenv("OPENCAGE_API_KEY") ## Otherwise is -> opencage_api_key = "ENTERKEY"
+    if not opencage_api_key:
+        raise ValueError("OpenCage API Key not found. Please set it in the environment or in a .env file.")
+
     number = input("Please enter the phone number (with country code): ")
 
     # Validate phone number format
@@ -35,7 +42,7 @@ def track_location():
     print(f"Service Provider: {service_name}")
 
     # Geocode using OpenCage API
-    geocoder_obj = OpenCageGeocode(key)
+    geocoder_obj = OpenCageGeocode(opencage_api_key)
     query = str(location)
     try:
         result = geocoder_obj.geocode(query)
@@ -49,11 +56,11 @@ def track_location():
 
             # Save map to HTML file
             html_file = "location.html"
-            file_path = os.path.abspath(html_file)  # Get absolute file path
-            my_map.save(file_path)
+            my_map.save(html_file)
 
             # Open the HTML file in the default web browser
-            webbrowser.open('file://' + file_path, new=2)
+            import webbrowser
+            webbrowser.open('file://' + os.path.realpath(html_file))
 
             print("Location tracking completed. Map saved and opened in browser.")
         else:

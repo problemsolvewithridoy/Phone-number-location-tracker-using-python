@@ -23,6 +23,7 @@ To make this project only you need to follow this step:-
   pip install folium
   pip install geocoder
   pip install opencage
+  pip install load_dotenv
 ```
 ### Install package with pip (Mac)
 ```
@@ -30,7 +31,7 @@ python3 -m pip install phonenumbers
 python3 -m pip install folium
 python3 -m pip install geocoder
 python3 -m pip install opencage
-
+python3 -m pip install load_dotenv
 ```
 
 Now need to collect Geocoder API Key from https://opencagedata.com/
@@ -47,8 +48,12 @@ Step3: From API Keys collect API key
 
 ![github3](https://user-images.githubusercontent.com/123636419/215339773-0171d38c-b9ad-490a-95d8-47366321048a.PNG)
 
+### Set API key
 
-
+Create a `.env` file. In this file enter the following replacing `keyhere` with your API key:
+```
+OPENCAGE_API_KEY=keyhere
+```
 
 ## Deployment
 
