@@ -70,6 +70,4 @@ def track_location():
 
     print("Thank you")
 
-# Run the main function
-if __name__ == "__main__":
-    track_location()
+track_location()
