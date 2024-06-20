@@ -58,6 +58,9 @@ OPENCAGE_API_KEY=keyhere
 ## Deployment
 Simply run the file `main.py`!
 
+### Please note:
+This cannot be used to accuratly locate someone phone number as per: [link](https://blog.opencagedata.com/post/we-can-not-convert-a-phone-number-into-a-location-sorry)
+
 
 You can follow me
 
