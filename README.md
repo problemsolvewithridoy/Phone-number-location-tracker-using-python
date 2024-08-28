@@ -90,6 +90,26 @@ Facebook:- https://www.facebook.com/problemsolvewithridoy/
 
 Linkedin:- https://www.linkedin.com/in/ridoyhossain/
 
+⚠️⚠️⚠️ Attention Please ⚠️⚠️⚠️
+
+Tracking the location of a phone number typically involves using specialized services or apps that can access databases and provide information on the general geographic location of a phone. However, it's important to note that tracking someone's location without their explicit consent can raise ethical and legal concerns.
+
+Here are some common methods used for tracking phone number locations:
+
+1. Mobile Tracking Apps: There are several apps available that claim to track phone numbers. Some require installation on the target device, while others might use different methods like phone number databases or social media profiles to provide location information.
+
+2. Reverse Phone Lookup Services: Websites or services like Truecaller, Whitepages, or Spokeo offer reverse phone lookup services. They might provide information on the registered location of a phone number based on public records or user-contributed data.
+
+3. GPS Tracking Services: Certain apps or services allow you to track the location of family members or devices with their consent. For example, Find My iPhone for Apple devices or Google's Find My Device for Android devices can help locate a device linked to a specific account.
+
+4. Telecom Service Providers: In some cases, telecom service providers might offer location tracking services for authorized purposes like finding a lost device or for legal investigations. This is usually done with proper authorization and legal documentation.
+
+Remember, accessing someone's location without their consent can infringe upon their privacy and might be illegal in some jurisdictions. Always ensure you have permission or legal authorization before attempting to track someone's location.
+
+If you're trying to locate a lost device or have concerns about someone's safety, it's often best to involve the authorities or use legitimate methods designed for such situations.
+
+Note:- This project was developed solely for entertainment purposes. Moreover, this particular method is ineffective. Thank you 
+
 YouTube:- https://www.youtube.com/@problemsolvewithridoy
 
 If you have any confusion, please feel free to contact me. 
