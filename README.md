@@ -16,13 +16,22 @@ To make this project only you need to follow this step:-
 
 ## Installation
 
-Install package with pip
+### Install package with pip (Windows)
 
 ```bash
   pip install phonenumbers
   pip install folium
   pip install geocoder
   pip install opencage
+  pip install load_dotenv
+```
+### Install package with pip (Mac)
+```
+python3 -m pip install phonenumbers
+python3 -m pip install folium
+python3 -m pip install geocoder
+python3 -m pip install opencage
+python3 -m pip install load_dotenv
 ```
 
 Now need to collect Geocoder API Key from https://opencagedata.com/
@@ -39,49 +48,18 @@ Step3: From API Keys collect API key
 
 ![github3](https://user-images.githubusercontent.com/123636419/215339773-0171d38c-b9ad-490a-95d8-47366321048a.PNG)
 
+### Set API key
 
-
+Create a `.env` file. In this file enter the following replacing `keyhere` with your API key:
+```
+OPENCAGE_API_KEY=keyhere
+```
 
 ## Deployment
+Simply run the file `main.py`!
 
-To deploy this project run
-
-```bash
-import phonenumbers
-from phonenumbers import geocoder
-from phonenumbers import carrier
-import opencage
-from opencage.geocoder import OpenCageGeocode
-import folium
-
-
-key = "your key" #Geocoder API Key need to paste here "your key" 
-number = input("please giver your number: ")
-new_number = phonenumbers.parse(number)
-location = geocoder.description_for_number(new_number, "en")
-print(location)
-
-service_name = carrier.name_for_number(new_number,"en")
-print(service_name)
-
-geocoder = OpenCageGeocode(key)
-query = str(location)
-result = geocoder.geocode(query)
-#print(result)
-
-lat = result[0]['geometry']['lat']
-lng = result[0]['geometry']['lng']
-
-print(lat,lng)
-
-my_map = folium.Map(location=[lat,lng], zoom_start=9)
-folium.Marker([lat, lng], popup= location).add_to(my_map)
-
-my_map.save("location.html")
-
-print("location tracking completed")
-print("Thank you")
-```
+### Please note:
+This cannot be used to accuratly locate someone phone number as per: [link](https://blog.opencagedata.com/post/we-can-not-convert-a-phone-number-into-a-location-sorry)
 
 
 You can follow me
